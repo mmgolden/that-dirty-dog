@@ -1,0 +1,23 @@
+#jobs {
+    h2 {
+        margin-bottom: 30px;
+    }
+    button {
+        margin-top: 30px;
+    }
+    img {
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:991px) {
+        @include p30;
+        img {
+            margin-bottom: 0;
+        }
+    }
+}
+
+#jobs .content {
+    @media screen and (min-width: 1200px) {
+        padding-left: 60px;
+    }
+}

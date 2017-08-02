@@ -1,0 +1,63 @@
+// List style
+@mixin list {
+    list-style: none;
+    padding-left: 0;
+    @content;
+}
+
+// Small icons
+@mixin icon-small {
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    transition: background 0.8s;
+    width: 30px;
+    height: 30px;
+    @content;
+}
+
+// Button style
+@mixin btn($bg, $hover-color) {
+    background: $bg;
+    transition: background 0.8s;
+    &:hover,
+    &:focus {
+        background: $hover-color;
+    }
+}
+
+// 30px padding
+@mixin p30 {
+    padding-left: 30px;
+    padding-right: 30px;
+    @content;
+}
+
+// No top or bottom padding
+@mixin nopad {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+// Overlay
+@mixin overlay($bg) {
+    background: $bg;
+    padding: 60px 0;
+    @media screen and (min-width: 991px) {
+        padding: 80px 0;
+    }
+}
+
+// Lightbox buttons
+@mixin lightbox-btn {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  &:hover {
+    opacity: 0.7;
+  }
+  @content;
+  @media screen and (min-width:768px) {
+    font-size: 3em;
+  }
+}

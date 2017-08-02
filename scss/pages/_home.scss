@@ -1,0 +1,77 @@
+// Hero
+#hero {
+    background: {
+        image: url('http://via.placeholder.com/1400x500');
+        repeat: no-repeat;
+        size: cover;
+        position: 50% 50%;
+    }
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 992px) {
+        height: 500px;
+        h1 {
+            font-size: $xl-font-size;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+    }
+}
+
+.hero-text {
+    text-align: center;
+    align-self: center;
+    h1 {
+        font-family: $secondary-font;
+        color: $secondary-accent-color;
+        font-weight: $bold-font-weight;
+        font-size: $large-font-size;
+        width: 40%;
+        margin: 0 auto 20px auto;
+    }
+}
+
+// Intro
+#intro {
+    text-align: center;
+    h2 {
+        margin-bottom: 20px;
+    }
+    .btn {
+        margin-top: 30px;
+    }
+    p {
+        margin: 0;
+    }
+} 
+
+// Services
+#home-services {
+    text-align: center;
+    h2 {
+        margin-bottom: 40px;
+    }
+    h3 {
+        margin-bottom: 15px;
+    }
+    p {
+        margin: 0;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+    img {
+        height: 160px;
+        margin-bottom: 30px;
+    }
+    .row .col-lg-4:nth-child(2) {
+        margin: 60px 0;
+    }
+}
+ 
+@media screen and (min-width: 992px) {
+    #home-services .row .col-lg-4:nth-child(2) {
+        margin: 0;
+    }
+}

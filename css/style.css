@@ -1,0 +1,1286 @@
+/* line 2, /Users/melinda/Desktop/that-dirty-dog2/scss/utilities/_placeholders.scss */
+.btn-red, .btn-prl {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+}
+
+/* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/base/_base.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* line 6, /Users/melinda/Desktop/that-dirty-dog2/scss/base/_base.scss */
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.75em;
+  color: #4A4A4A;
+}
+
+/* line 16, /Users/melinda/Desktop/that-dirty-dog2/scss/base/_base.scss */
+h2 {
+  font-size: 2em;
+  font-family: "Signika", sans-serif;
+  font-weight: 400;
+  color: #A180AF;
+  text-transform: uppercase;
+}
+
+/* line 26, /Users/melinda/Desktop/that-dirty-dog2/scss/base/_base.scss */
+h3 {
+  font-size: 1.5em;
+  font-family: "Signika", sans-serif;
+  font-weight: 400;
+  color: #A180AF;
+  text-transform: uppercase;
+}
+
+/* line 36, /Users/melinda/Desktop/that-dirty-dog2/scss/base/_base.scss */
+.gray-bg {
+  background: #F6F6F6;
+}
+
+/* line 40, /Users/melinda/Desktop/that-dirty-dog2/scss/base/_base.scss */
+.img-border {
+  padding: 20px;
+  border: 2px solid #DBCD51;
+  width: 100%;
+}
+
+/* line 46, /Users/melinda/Desktop/that-dirty-dog2/scss/base/_base.scss */
+.dark-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 46, /Users/melinda/Desktop/that-dirty-dog2/scss/base/_base.scss */
+  .dark-overlay {
+    padding: 80px 0;
+  }
+}
+
+/* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_containers.scss */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_containers.scss */
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* line 10, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_containers.scss */
+.container,
+.container-fluid {
+  max-width: 1400px;
+}
+
+/* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+footer {
+  padding: 60px 0 15px 0;
+  background: #464B51;
+}
+
+/* line 4, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+footer h3 {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1370px) {
+  /* line 4, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+  footer h3 {
+    font-size: 1.5em;
+  }
+}
+
+/* line 13, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+footer a {
+  color: #fff;
+}
+
+/* line 15, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+footer a:hover, footer a:focus {
+  color: #fff;
+}
+
+/* line 20, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+footer .btn {
+  width: 100%;
+  font-size: 0.75em;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1080px) {
+  /* line 20, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+  footer .btn {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 20, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+  footer .btn {
+    font-size: 0.875em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+  footer {
+    padding: 80px 30px;
+  }
+}
+
+/* line 35, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+footer .row .col-lg-4:nth-child(2) {
+  padding: 60px 15px;
+}
+
+@media screen and (min-width: 767px) {
+  /* line 35, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+  footer .row .col-lg-4:nth-child(2) {
+    padding: 0 15px;
+  }
+}
+
+/* line 42, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-contact,
+.footer-social,
+.footer-hours {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 48, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-contact li {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+/* line 53, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-icon {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  transition: background 0.8s;
+  width: 30px;
+  height: 30px;
+  background: #A180AF;
+  margin-right: 20px;
+}
+
+/* line 58, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-icon i {
+  color: #fff;
+  line-height: 30px;
+  font-size: 1em;
+}
+
+/* line 63, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-icon:hover, .footer-icon:focus {
+  background: #754988;
+}
+
+/* line 69, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-social {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+/* line 72, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-social li {
+  display: inline-block;
+}
+
+/* line 75, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-social .footer-icon {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  transition: opacity 0.8s;
+}
+
+/* line 80, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-social .footer-icon i {
+  color: #4C4666;
+  font-size: 1.5em;
+  line-height: 45px;
+}
+
+/* line 85, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-social .footer-icon:hover, .footer-social .footer-icon:focus {
+  opacity: 0.7;
+}
+
+/* line 92, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-hours li {
+  border-bottom: 1px solid #979797;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* line 96, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-hours li span {
+  float: right;
+}
+
+/* line 99, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-hours li:first-child {
+  padding-top: 0;
+}
+
+/* line 102, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-hours li:last-child {
+  border-bottom: none;
+}
+
+/* line 107, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.footer-logo {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 107, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+  .footer-logo {
+    display: inherit;
+    position: relative;
+    top: 130px;
+  }
+  /* line 113, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+  .footer-logo img {
+    padding-right: 30px;
+  }
+}
+
+/* line 119, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.mobile-footer-logo {
+  margin: 30px auto 0 auto;
+}
+
+/* line 121, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+.mobile-footer-logo img:first-child {
+  padding-right: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 119, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+  .mobile-footer-logo {
+    display: none;
+  }
+}
+
+/* line 129, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+#copyright {
+  background: #383C41;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* line 133, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+#copyright p {
+  color: #fff;
+  margin: 0;
+  font-size: 0.875em;
+}
+
+/* line 140, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: #A180AF;
+}
+
+/* line 150, /Users/melinda/Desktop/that-dirty-dog2/scss/layout/_footer.scss */
+#back-to-top i {
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 50px;
+}
+
+/* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_buttons.scss */
+.btn-red {
+  background: #A55958;
+  transition: background 0.8s;
+}
+
+/* line 23, /Users/melinda/Desktop/that-dirty-dog2/scss/utilities/_mixins.scss */
+.btn-red:hover, .btn-red:focus {
+  background: #813635;
+}
+
+/* line 6, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_buttons.scss */
+.btn-prl {
+  background: #A180AF;
+  transition: background 0.8s;
+}
+
+/* line 23, /Users/melinda/Desktop/that-dirty-dog2/scss/utilities/_mixins.scss */
+.btn-prl:hover, .btn-prl:focus {
+  background: #754988;
+}
+
+/* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+#topbar {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 6, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+  #topbar {
+    display: inherit;
+    background: #DAF0F2;
+    padding: 15px 30px;
+  }
+  /* line 10, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+  #topbar a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.875em;
+    color: #4A4A4A;
+  }
+  /* line 17, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+  .top-contact,
+  .top-social {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  /* line 23, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+  .top-contact li {
+    display: inline-block;
+    margin-right: 50px;
+  }
+  /* line 26, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+  .top-contact li:last-child {
+    margin-right: 0;
+  }
+  /* line 30, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+  .top-icon {
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    transition: background 0.8s;
+    width: 30px;
+    height: 30px;
+    background: #726C89;
+    margin-right: 10px;
+  }
+  /* line 34, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+  .top-icon:last-child {
+    margin-right: 0;
+  }
+  /* line 38, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+  .top-icon i {
+    color: #fff;
+    line-height: 30px;
+    font-size: 1em;
+  }
+  /* line 43, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+  .top-icon:hover, .top-icon:focus {
+    background: #4a4365;
+  }
+  /* line 49, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+  .top-social li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  /* line 52, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_topbar.scss */
+  .top-social li:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.navbar {
+  margin-bottom: 0;
+  background-color: #fff;
+  border-color: transparent;
+  padding-left: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar {
+    height: 120px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar {
+    height: 150px;
+  }
+}
+
+/* line 14, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.navbar-header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 20, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.navbar-default .navbar-toggle {
+  margin-left: auto;
+  border-color: transparent;
+}
+
+/* line 23, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+/* line 27, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  width: 40px;
+  height: 5px;
+  background-color: #4A4A4A;
+}
+
+/* line 33, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 33, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-default .navbar-collapse {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 33, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-default .navbar-collapse {
+    margin-top: 45px;
+  }
+}
+
+/* line 42, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.brand-centered {
+  display: flex;
+  position: absolute;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 42, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .brand-centered {
+    justify-content: center;
+    width: 100%;
+    margin-left: -30px;
+  }
+  /* line 49, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .brand-centered .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* line 55, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.navbar-brand {
+  float: none;
+  height: auto;
+  padding: 0;
+}
+
+/* line 60, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+#logo {
+  height: 90px;
+  width: auto;
+  position: relative;
+  bottom: 95px;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 60, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  #logo {
+    width: 200px;
+    height: auto;
+    bottom: -10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 60, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  #logo {
+    width: 250px;
+  }
+}
+
+/* line 74, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.navbar-toggle {
+  z-index: 1;
+}
+
+/* line 77, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.navbar-default .navbar-nav > li > a {
+  padding: 15px 0;
+  font-size: 1.2em;
+  font-family: "Signika", sans-serif;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  transition: color 0.8s;
+}
+
+/* line 86, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #A55958;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 77, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-default .navbar-nav > li > a {
+    padding-right: 40px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 77, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-default .navbar-nav > li > a {
+    padding-right: 60px;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* line 77, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-default .navbar-nav > li > a {
+    padding-right: 70px;
+    font-size: 1.5em;
+  }
+}
+
+/* line 103, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #A55958;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 110, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  #last-item {
+    padding-right: 0;
+  }
+}
+
+/* Collapse at 991px */
+@media (max-width: 991px) {
+  /* line 116, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-header {
+    float: none;
+  }
+  /* line 119, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-toggle {
+    display: block;
+  }
+  /* line 123, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  /* line 127, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  /* line 130, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+  }
+  /* line 134, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-nav > li {
+    float: none;
+  }
+  /* line 137, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* line 141, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+  /* line 145, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  /* line 148, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_navigation.scss */
+  .collapsing {
+    overflow: hidden !important;
+  }
+}
+
+/* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_banner.scss */
+.banner {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("http://via.placeholder.com/1400x250");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 12, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_banner.scss */
+.banner .banner-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  max-width: 1370px;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 12, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_banner.scss */
+  .banner .banner-content {
+    justify-content: space-between;
+  }
+}
+
+/* line 22, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_banner.scss */
+.banner h1 {
+  text-align: center;
+  color: #A55958;
+  font-size: 2em;
+  font-weight: 600;
+  font-family: "Signika", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_banner.scss */
+  .banner {
+    height: 250px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+/* line 38, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_banner.scss */
+.breadcrumbs {
+  display: none;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* line 43, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_banner.scss */
+.breadcrumbs li {
+  color: #4A4A4A;
+  font-family: "Signika", sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+/* line 48, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_banner.scss */
+.breadcrumbs li:first-child {
+  padding-right: 12px;
+}
+
+/* line 51, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_banner.scss */
+.breadcrumbs li a {
+  color: #A55958;
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 38, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_banner.scss */
+  .breadcrumbs {
+    display: inherit;
+  }
+}
+
+/* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_call-to-atn.scss */
+#call-to-atn {
+  padding: 50px 15px;
+  background-image: url("../images/bubbles.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/* line 10, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_call-to-atn.scss */
+#call-to-atn h2 {
+  color: #A55958;
+  text-transform: inherit;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_call-to-atn.scss */
+  #call-to-atn {
+    padding: 60px 45px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* line 24, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_call-to-atn.scss */
+  #call-to-atn h2 {
+    margin: 0;
+    font-size: 2em;
+    line-height: 37px;
+    width: 60%;
+  }
+  /* line 30, /Users/melinda/Desktop/that-dirty-dog2/scss/components/_call-to-atn.scss */
+  #call-to-atn .btn {
+    align-self: center;
+  }
+}
+
+/* line 2, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#hero {
+  background-image: url("http://via.placeholder.com/1400x500");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 2, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+  #hero {
+    height: 500px;
+  }
+  /* line 14, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+  #hero h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+/* line 22, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+.hero-text {
+  text-align: center;
+  align-self: center;
+}
+
+/* line 25, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+.hero-text h1 {
+  font-family: "Signika", sans-serif;
+  color: #A55958;
+  font-weight: 600;
+  font-size: 2em;
+  width: 40%;
+  margin: 0 auto 20px auto;
+}
+
+/* line 36, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#intro {
+  text-align: center;
+}
+
+/* line 38, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#intro h2 {
+  margin-bottom: 20px;
+}
+
+/* line 41, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#intro .btn {
+  margin-top: 30px;
+}
+
+/* line 44, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#intro p {
+  margin: 0;
+}
+
+/* line 50, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#home-services {
+  text-align: center;
+}
+
+/* line 52, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#home-services h2 {
+  margin-bottom: 40px;
+}
+
+/* line 55, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#home-services h3 {
+  margin-bottom: 15px;
+}
+
+/* line 58, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#home-services p {
+  margin: 0;
+}
+
+/* line 61, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#home-services .btn {
+  margin-top: 20px;
+}
+
+/* line 64, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#home-services img {
+  height: 160px;
+  margin-bottom: 30px;
+}
+
+/* line 68, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+#home-services .row .col-lg-4:nth-child(2) {
+  margin: 60px 0;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 74, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_home.scss */
+  #home-services .row .col-lg-4:nth-child(2) {
+    margin: 0;
+  }
+}
+
+/* line 2, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#our-story h2, #community h2 {
+  margin-bottom: 30px;
+}
+
+/* line 5, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#our-story img, #community img {
+  margin-bottom: 40px;
+}
+
+/* line 8, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#our-story ul, #community ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+/* line 12, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#our-story ul li, #community ul li {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+/* line 17, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#our-story i, #community i {
+  color: #A180AF;
+  font-size: 2em;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+  #our-story, #community {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* line 24, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+  #our-story img, #community img {
+    margin-bottom: 0;
+  }
+  /* line 27, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+  #our-story i, #community i {
+    margin-right: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 33, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+  #our-story .content, #community .content {
+    padding-left: 60px;
+  }
+}
+
+/* line 39, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#philosophy {
+  background-image: url("../images/bubbles.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 46, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#philosophy h2 {
+  color: #A55958;
+  margin-bottom: 20px;
+}
+
+/* line 50, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#philosophy p {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 39, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+  #philosophy {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* line 59, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+.feature-icon {
+  background: #A55958;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 40px auto 30px auto;
+}
+
+/* line 65, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+.feature-icon i {
+  color: #fff;
+  font-size: 44px;
+  line-height: 100px;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 59, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+  .feature-icon {
+    margin-top: 50px;
+  }
+}
+
+/* line 75, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+.sticky-img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 75, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+  .sticky-img {
+    height: 350px;
+  }
+}
+
+/* line 84, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#community {
+  padding-bottom: 0;
+}
+
+/* line 87, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#community img {
+  width: 50%;
+  margin-bottom: 0;
+}
+
+/* line 93, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#our-team {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image: url("http://via.placeholder.com/1200x450");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 101, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#our-team h2 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* line 105, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_aboutus.scss */
+#our-team p {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* line 2, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_jobs.scss */
+#jobs h2 {
+  margin-bottom: 30px;
+}
+
+/* line 5, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_jobs.scss */
+#jobs button {
+  margin-top: 30px;
+}
+
+/* line 8, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_jobs.scss */
+#jobs img {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_jobs.scss */
+  #jobs {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* line 13, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_jobs.scss */
+  #jobs img {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 19, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_jobs.scss */
+  #jobs .content {
+    padding-left: 60px;
+  }
+}
+
+/* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+#gallery {
+  padding-top: 40px;
+}
+
+/* line 3, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+#gallery img {
+  display: none;
+  margin-top: 20px;
+}
+
+/* line 7, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+#gallery button {
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+  #gallery {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+  }
+}
+
+/* line 18, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 34, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+#overlay img {
+  margin: 0;
+  width: 80%;
+  padding: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 34, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+  #overlay img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 34, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+  #overlay img {
+    width: 50%;
+  }
+}
+
+/* line 47, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+#nextButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+
+/* line 56, /Users/melinda/Desktop/that-dirty-dog2/scss/utilities/_mixins.scss */
+#nextButton:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 47, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+  #nextButton {
+    font-size: 3em;
+  }
+}
+
+/* line 51, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+#prevButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+
+/* line 56, /Users/melinda/Desktop/that-dirty-dog2/scss/utilities/_mixins.scss */
+#prevButton:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 51, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+  #prevButton {
+    font-size: 3em;
+  }
+}
+
+/* line 55, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+#exitButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* line 56, /Users/melinda/Desktop/that-dirty-dog2/scss/utilities/_mixins.scss */
+#exitButton:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 55, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_gallery.scss */
+  #exitButton {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  /* line 1, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+  #contact {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* line 7, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+.contact-box {
+  background: #fff;
+  padding: 90px 15px 15px 15px;
+  position: relative;
+  margin-top: 60px;
+}
+
+/* line 12, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+.contact-box h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 16, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+.contact-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 18, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+.contact-box ul li {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+/* line 23, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+.contact-box i {
+  color: #A180AF;
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+/* line 28, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+.contact-box a {
+  color: #4A4A4A;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 7, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+  .contact-box {
+    padding: 90px 30px 30px 30px;
+    margin-top: 80px;
+    min-height: 528px;
+  }
+}
+
+/* line 38, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+.contact-icon {
+  background: #A180AF;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, -50px);
+}
+
+/* line 48, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+.contact-icon i {
+  color: #fff;
+  margin: 0;
+  font-size: 44px;
+  line-height: 120px;
+}
+
+/* line 56, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+.map-box {
+  padding: 90px 0 0 0;
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+
+/* line 60, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+.map-box ul {
+  padding: 0 15px 5px 15px;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 56, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+  .map-box {
+    padding: 90px 0 0 0;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+  /* line 67, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+  .map-box ul {
+    padding: 0 30px 5px 30px;
+  }
+}
+
+/* line 73, /Users/melinda/Desktop/that-dirty-dog2/scss/pages/_contact.scss */
+#map {
+  width: 100%;
+  height: 200px;
+  background-color: #eee;
+}
+
+/*# sourceMappingURL=../css/style.map */

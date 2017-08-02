@@ -1,0 +1,35 @@
+#call-to-atn {
+    padding: 50px 15px;
+    background: {
+        image: url('../images/bubbles.png');
+        size: cover;
+        position: 50% 50%;
+        repeat: no-repeat;
+    }
+    text-align: center;
+    h2 {
+        color: $secondary-accent-color;
+        text-transform: inherit;
+        font-weight: $bold-font-weight;
+        font-size: $medium-font-size;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 992px) {
+        padding: 60px 45px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2 {
+            margin: 0;
+            font-size: $large-font-size;
+            line-height: 37px;
+            width: 60%;
+        }
+        .btn {
+            align-self: center;
+        }  
+    }
+}
+

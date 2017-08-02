@@ -1,0 +1,59 @@
+.banner {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: {
+        image: url('http://via.placeholder.com/1400x250');
+        size: cover;
+        position: 50% 50%;
+        repeat: no-repeat;
+    }
+    .banner-content {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        max-width: 1370px;
+        @media screen and (min-width: 991px) {
+            justify-content: space-between;
+        }
+    }
+    h1 {
+        text-align: center;
+        color: $secondary-accent-color;
+        font-size: $large-font-size;
+        font-weight: $bold-font-weight;
+        font-family: $secondary-font;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    @media screen and (min-width:991px) {
+        height: 250px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
+
+.breadcrumbs {
+    display: none;
+    @include list {
+        margin: 0;
+    }
+    li {
+        color: $primary-font-color;
+        font-family: $secondary-font;
+        font-size: $small-font-size;
+        text-transform: uppercase;
+        &:first-child {
+            padding-right: 12px;
+        }
+        a {
+            color: $secondary-accent-color;
+            padding-right: 8px;
+        }
+    }
+    @media screen and (min-width:991px) {
+        display: inherit;
+    }
+}

@@ -1,0 +1,56 @@
+#topbar {
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+    #topbar {
+        display: inherit;
+        background: $topbar-bg-color;
+        padding: 15px 30px;
+        a {
+            font-family: $primary-font;
+            font-weight: $bold-font-weight;
+            font-size: $secondary-font-size;
+            color: $primary-font-color;
+        }
+    }
+    .top-contact,
+    .top-social {
+        @include list {
+            margin-bottom: 0;
+        }
+    }
+    .top-contact li {
+        display: inline-block;
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .top-icon {
+        @include icon-small {
+            background: $topbar-icon-bg-color;
+            margin-right: 10px;  
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        i {
+            color: #fff;
+            line-height: 30px;
+            font-size: $primary-font-size;
+        }
+        &:hover,
+        &:focus {
+            background: $topbar-icon-bg-hover-color;
+        }
+    }
+    
+    .top-social li {
+        display: inline-block;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

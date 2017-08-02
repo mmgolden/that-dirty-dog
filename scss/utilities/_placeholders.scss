@@ -1,0 +1,12 @@
+// Buttons
+%button {
+    font: {
+        family: $primary-font;
+        size: $secondary-font-size;
+        weight: $bold-font-weight;
+    }
+    padding: 15px 25px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+}

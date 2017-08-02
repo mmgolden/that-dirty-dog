@@ -1,0 +1,48 @@
+body {
+    font-family: $primary-font;
+    font-size: 16px;
+}
+
+p {
+    font: {
+        family: $primary-font;
+        size: $primary-font-size;
+        weight: $regular-font-weight;
+    }
+    line-height: 1.75em;
+    color: $primary-font-color;
+}
+
+h2 {
+    font: {
+        size: $large-font-size;
+        family: $secondary-font;
+        weight: $regular-font-weight;
+    }
+    color: $primary-accent-color;
+    text-transform: uppercase;
+}
+
+h3 {
+    font: {
+        size: $medium-font-size;
+        family: $secondary-font;
+        weight: $regular-font-weight;
+    }
+    color: $primary-accent-color;
+    text-transform: uppercase;
+}
+
+.gray-bg {
+    background: $gray-bg-color;
+}
+
+.img-border {
+    padding: 20px;
+    border: 2px solid #DBCD51;
+    width:100%;
+}
+
+.dark-overlay {
+    @include overlay(rgba(0,0,0,0.5));
+}

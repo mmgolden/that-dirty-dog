@@ -1,0 +1,9 @@
+.btn-red {
+    @extend %button;
+    @include btn($secondary-accent-color, $secondary-accent-hover-color);
+}
+
+.btn-prl {
+    @extend %button;
+    @include btn($primary-accent-color, $primary-accent-hover-color);
+}

@@ -1,0 +1,111 @@
+#our-story {
+    h2 {
+        margin-bottom: 30px;
+    }
+    img {
+        margin-bottom: 40px;
+    }
+    ul {
+        @include list {
+            margin-top: 25px;
+        }
+        li {
+            display: flex;
+            margin-bottom: 25px;
+        }
+    }
+    i {
+        color: $primary-accent-color;
+        font-size: $large-font-size;
+        margin-right: 15px;
+    } 
+    @media screen and (min-width:991px) {
+        @include p30;
+        img {
+            margin-bottom: 0;
+        }
+        i {
+            margin-right: 35px;
+        }
+    }
+}
+
+#our-story .content {
+    @media screen and (min-width: 1200px) {
+        padding-left: 60px;
+    }
+}
+
+#philosophy {
+    background: {
+        image: url('../images/bubbles.png');
+        size: cover;
+        position: 50% 50%;
+        repeat: no-repeat;
+    }
+    h2 {
+        color: $secondary-accent-color;
+        margin-bottom: 20px;
+    }
+    p {
+        font-weight: $bold-font-weight;
+        margin-bottom: 0;
+    }
+    @media screen and (min-width:991px) {
+        @include p30;
+    }
+}
+
+.feature-icon {
+    background: $secondary-accent-color;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 40px auto 30px auto;
+    i {
+        color: #fff;
+        font-size: 44px;
+        line-height: 100px;
+    }
+    @media screen and (min-width: 991px) {
+        margin-top: 50px;
+    }
+}
+
+.sticky-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    @media screen and (min-width: 991px) {
+        height: 350px;
+    }
+}
+
+#community {
+    @extend #our-story;
+    padding-bottom: 0;
+    img {
+        width: 50%;
+        margin-bottom: 0;
+    }
+}
+
+#our-team {
+    @include nopad;
+    background: {
+        image: url('http://via.placeholder.com/1200x450');
+        size: cover;
+        position: 50% 50%;
+        repeat: no-repeat;
+    }
+    h2 {
+        margin-bottom: 30px;
+        color: #fff;
+    }
+    p {
+        color: #fff;
+        font-size: $small-font-size;
+        font-weight: $bold-font-weight;
+        margin-bottom: 40px;
+    }
+}
