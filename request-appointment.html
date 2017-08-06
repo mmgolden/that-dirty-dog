@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
 
-        <title>That Dirty Dog</title>
+        <title>Request Appointment | That Dirty Dog</title>
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="images/favicon.ico">
@@ -88,7 +88,7 @@
 
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-left">
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                     </ul>
@@ -102,67 +102,168 @@
         </nav>
         <!-- End navigation -->
         
-        <!-- Hero -->
-        <section id="hero">
-            <div class="hero-text">
-                <h1>You Wash. We Wash. Pet Wash.</h1>
-                <a href="request-appointment.html"><button type="button" class="btn btn-primary btn-red">Request Appointment</button></a>
+        <!-- Banner -->
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Request Appointment</h1>
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="index.html">Home</a> |
+                    </li>
+                    <li>
+                        Request Appointment
+                    </li>
+                </ul>
             </div>
         </section>
-        <!-- End hero -->
+        <!-- End banner -->
         
-        <!-- Intro -->
-        <section class="gray-bg" id="intro">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-12">
-                        <h2>That Dirty Dog</h2>
-                        <p>Welcome to That Dirty Dog, North Fulton's Premier Pet Spaw!  Serving the Atlanta area since 2005, we make bathing and grooming your pet easy and fun! We offer self-service bathing, full service bathing as well as complete professional pet grooming!  At That Dirty Dog you can rest assured that your pet is being treated kindly and that we are caring for your pet in a clean and safe environment!</p>
-                        <a href="aboutus.html"><button type="button" class="btn btn-primary btn-prl">Learn More</button></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End intro -->
-        
-        <!-- Services -->
-        <section id="home-services">
+        <!-- Form -->
+        <section>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>Our Services</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img src="images/self.svg" alt="Dog shampoo bottle">
-                        <h3>Self-Service Bathing</h3>
-                        <p>A refreshing self-service bath with our quality products!</p>
-                        <a href="services.html"><button type="button" class="btn btn-primary btn-prl">Learn More</button></a>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="images/full.svg" alt="Bull terrier in a bubble bath">
-                        <h3>Full Service Bathing</h3>
-                        <p>Bathing by our spaw specialists by appointment!</p>
-                        <a href="services.html"><button type="button" class="btn btn-primary btn-prl">Learn More</button></a>
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="images/grooming.svg" alt="Comb and scissors">
-                        <h3>Full Grooming</h3>
-                        <p>Bath, blowdry, and haircutting appointments by our amazing staff book up quickly!</p>
-                        <a href="services.html"><button type="button" class="btn btn-primary btn-prl">Learn More</button></a>
+                        <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Contact Information</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="customertype">Are you a new or returning customer?</label><br>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="customertype" id="customertype1" value="New"> New
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="customertype" id="customertype2" value="Returning"> Returning
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">First Name *</label>
+                                        <input id="form_name" type="text" name="firstname" class="form-control" placeholder="Please enter your first name" required="required" data-error="Your first name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Last Name *</label>
+                                        <input id="form_lastname" type="text" name="lastname" class="form-control" placeholder="Please enter your last name" required="required" data-error="Your last name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Phone *</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone" required="required" data-error="Your phone number is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="A valid email address is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Pet Information</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="numofdogs">Number of Dogs For Appointment</label>
+                                        <input id="numofdogs" type="text" name="numofdogs" class="form-control" placeholder="Number of dogs for appointment">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="breeds">Breed(s)</label>
+                                        <input id="breeds" type="text" name="breeds" class="form-control" placeholder="Type of breed(s)">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="dogweight">Dog(s) Weight</label>
+                                        <input id="dogweight" type="text" name="dogweight" class="form-control" placeholder="Dog(s) weight in pounds">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Appointment</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="bathgroom">Are you interested in a bath only or a full groom (bath and haircut)?</label><br>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="bathgroom" id="bathgroom1" value="Bath only"> Bath Only
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="bathgroom" id="bathgroom2" value="Full groom"> Full Groom
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="preferredday">Preferred Day</label>
+                                        <input id="preferredday" type="date" name="preferredday" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="preferredtime">Preferred Time</label>
+                                        <input id="preferredtime" type="text" name="preferredtime" class="form-control" placeholder="Preferred time">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="preferredgroomer">Preferred Groomer</label>
+                                        <input id="preferredgroomer" type="text" name="preferredgroomer" class="form-control" placeholder="Preferred groomer">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Short Description</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="How can we help you?" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messages"></div>
+
+                    </form>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End services -->
-        
-        <!-- Call to action -->
-        <div id="call-to-atn">
-            <h2>Request an appointment for a bath or haircut for your pet with one of our amazing spaw specialists!</h2>
-            <a href="request-appointment.html"><button type="button" class="btn btn-primary btn-red">Request Appointment</button></a>
-        </div>
-        <!-- End call to action -->
+        <!-- End form -->
         
         <!-- Footer -->
         <footer>

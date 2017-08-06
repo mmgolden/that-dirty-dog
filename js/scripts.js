@@ -2,9 +2,6 @@
 var currentYear = new Date().getFullYear();
 document.getElementById("current-year").innerHTML = currentYear;
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
 // Hide #back-to-top first
 $("#back-to-top").hide();
 
@@ -24,6 +21,19 @@ $('#back-to-top').click(function() {
     return false;
 });
 
+// Tooltip
+$('[rel=tooltip]').tooltip({container: 'body'});
+$('[data-toggle="tooltip"]').tooltip();
+
+// Gallery image hover
+$( ".img-wrapper" ).hover(
+  function() {
+    $(this).find(".img-overlay").animate({opacity: 1}, 600);
+  }, function() {
+    $(this).find(".img-overlay").animate({opacity: 0}, 600);
+  }
+);
+
 /************************ Lightbox ************************/
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
@@ -39,9 +49,9 @@ $("#gallery-page").append($overlay);
 $overlay.hide();
 
 // When an image is clicked
-$("#image-gallery a").click(function(event) {
+$(".img-overlay").click(function(event) {
   event.preventDefault();
-  var imageLocation = $(this).attr("href");
+  var imageLocation = $(this).prev().attr("href");
   $image.attr("src", imageLocation);
   $overlay.fadeIn("slow");
 });
@@ -56,7 +66,7 @@ $nextButton.click(function(event) {
   $("#overlay img").hide();
   var $currentImgSrc = $("#overlay img").attr("src");
   var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
-  var $nextImg = $($currentImg.closest("div").next().find("img"));
+  var $nextImg = $($currentImg.closest(".image").next().find("img"));
   var $images = $("#image-gallery img");
   if ($nextImg.length > 0) { 
     $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
@@ -71,7 +81,7 @@ $prevButton.click(function(event) {
   $("#overlay img").hide();
   var $currentImgSrc = $("#overlay img").attr("src");
   var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
-  var $nextImg = $($currentImg.closest("div.image").prev().find("img"));
+  var $nextImg = $($currentImg.closest(".image").prev().find("img"));
   $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
   event.stopPropagation();
 });
@@ -93,7 +103,7 @@ $("#gallery-btn").on('click', function(event) {
 });
 
 
-// Map
+/************************ Google Map ************************/
 function initMap() {
     var uluru = {lat: 34.0580942, lng: -84.3850274};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -275,3 +285,43 @@ function initMap() {
         icon: image
     });
 }
+
+/************************ Contact Form ************************/
+$('#contact-form').validator();
+
+
+// when the form is submitted
+$('#contact-form').on('submit', function (e) {
+
+    // if the validator does not prevent form submit
+    if (!e.isDefaultPrevented()) {
+        var url = "contact.php";
+
+        // POST values in the background the the script URL
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $(this).serialize(),
+            success: function (data)
+            {
+                // data = JSON object that contact.php returns
+
+                // we recieve the type of the message: success x danger and apply it to the 
+                var messageAlert = 'alert-' + data.type;
+                var messageText = data.message;
+
+                // let's compose Bootstrap alert box HTML
+                var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+
+                // If we have messageAlert and messageText
+                if (messageAlert && messageText) {
+                    // inject the alert to .messages div in our form
+                    $('#contact-form').find('.messages').html(alertBox);
+                    // empty the form
+                    $('#contact-form')[0].reset();
+                }
+            }
+        });
+        return false;
+    }
+})

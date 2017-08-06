@@ -13,6 +13,11 @@ p {
     color: $primary-font-color;
 }
 
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
 h2 {
     font: {
         size: $large-font-size;
@@ -45,4 +50,14 @@ h3 {
 
 .dark-overlay {
     @include overlay(rgba(0,0,0,0.5));
+}
+.tooltip-inner {
+    background-color: $tooltip-bg-color;
+    color: #fff;
+}
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: $tooltip-bg-color;
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: $tooltip-bg-color;
 }
