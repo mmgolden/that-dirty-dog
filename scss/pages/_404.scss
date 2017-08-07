@@ -1,0 +1,18 @@
+#not-found {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @media screen and (min-width: 991px) {
+            height: 400px;
+        }
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+}

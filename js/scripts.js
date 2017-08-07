@@ -34,6 +34,30 @@ $( ".img-wrapper" ).hover(
   }
 );
 
+// Textillate
+$('.tlt').textillate({
+  loop: true,
+  minDisplayTime: 2500,
+  initialDelay: 0,
+  in: {
+    effect: 'fadeInDown',
+    delayScale: 1.5,
+    delay: 50,
+    sync: false,
+    shuffle: false,
+    reverse: false
+  },
+  out: {
+    effect: 'fadeOutUp',
+    delayScale: 1.5,
+    delay: 50,
+    sync: false,
+    shuffle: false,
+    reverse: false
+  },
+  type: 'char'
+});
+
 /************************ Lightbox ************************/
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
@@ -92,14 +116,20 @@ $exitButton.click(function() {
 });
 
 /************************ Show More Image Gallery ************************/
+// Hide the images first
+$("#image-gallery img").hide();
+
 // Show the first eight images
-$("#image-gallery img:lt(8)").show();
+$("#image-gallery img:lt(12)").show();
 
 // When the gallery button is clicked
 $("#gallery-btn").on('click', function(event) {
   event.preventDefault();
   var $hidden = $("#image-gallery img:hidden");
   $($hidden).slice(0, 4).fadeIn(800);
+  if ($hidden.length == 4) {
+    $(this).fadeOut();
+  }
 });
 
 
@@ -295,7 +325,7 @@ $('#contact-form').on('submit', function (e) {
 
     // if the validator does not prevent form submit
     if (!e.isDefaultPrevented()) {
-        var url = "contact.php";
+        var url = "appointment.php";
 
         // POST values in the background the the script URL
         $.ajax({

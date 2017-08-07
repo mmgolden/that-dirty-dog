@@ -1,15 +1,16 @@
 // Hero
 #hero {
     background: {
-        image: url('http://via.placeholder.com/1400x500');
+        image: url('../images/hero.jpg');
         repeat: no-repeat;
         size: cover;
-        position: 50% 50%;
+        position: 10% 50%;
     }
     height: 300px;
     display: flex;
     justify-content: center;
     @media screen and (min-width: 992px) {
+        background-position: 50% 50%;
         height: 500px;
         h1 {
             font-size: $xl-font-size;

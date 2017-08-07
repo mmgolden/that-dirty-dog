@@ -93,7 +93,7 @@
 #our-team {
     @include nopad;
     background: {
-        image: url('http://via.placeholder.com/1200x450');
+        image: url('../images/team-bg.jpg');
         size: cover;
         position: 50% 50%;
         repeat: no-repeat;
@@ -107,5 +107,8 @@
         font-size: $small-font-size;
         font-weight: $bold-font-weight;
         margin-bottom: 40px;
+    }
+    @media screen and (min-width:991px) {
+        background-attachment: fixed;
     }
 }
