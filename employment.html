@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+
+        <title>Employment | That Dirty Dog</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Signika:400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Modal -->
+        <div class="modal fade" id="operatingHours" tabindex="-1" role="dialog" aria-labelledby="hours">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="hours">Hours of Operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="modal-list">
+                            <li><strong>Mon</strong> 10:00 AM - 3:00 PM</li>
+                            <li><strong>Tues-Fri</strong> 10:00 AM - 6:00 PM</li>
+                            <li><strong>Sat</strong> 9:00 AM - 6:00 PM</li>
+                            <li><strong>Sun</strong> 11:00 AM - 5:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End modal -->
+        <!-- Topbar -->
+        <div id="topbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="top-contact pull-left">
+                            <li>
+                                <div class="top-icon">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                </div>
+                                <a href="tel:+17709937877" data-toggle="tooltip" data-placement="bottom" title="Call Us">770-993-7877</a>
+                            </li>
+                            <li>
+                                <div class="top-icon" aria-hidden="true">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <a href="https://www.google.com/maps/place/11255+Woodstock+Rd+%23100,+Roswell,+GA+30075/@34.0580942,-84.3850274,17z/data=!3m1!4b1!4m5!3m4!1s0x88f57311d3a82021:0x7b4404910b68d1d1!8m2!3d34.0580942!4d-84.3828387?q=11255+Woodstock+Road+%23100+Roswell,+GA+30075&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiGmdikwvzUAhUCPj4KHSiuCacQ_AUICigB" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Open in Google Maps">11255 Woodstock Road #100 Roswell, GA 30075</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="top-social pull-right">
+                            <li>
+                                <a href="https://www.facebook.com/thatdirtydog/" class="top-icon" aria-label="Facebook" target="_blank" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/thatdirtydog" class="top-icon" aria-label="Twitter" target="_blank" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/thatdirtydog/" class="top-icon" aria-label="Instagram" target="_blank" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.yelp.com/biz/that-dirty-dog-roswell-2" class="top-icon" aria-label="Yelp" target="_blank" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Yelp"><i class="fa fa-yelp" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End topbar -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="brand-centered">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="That Dirty Dog" id="logo"></a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="hiring.html">Jobs</a></li>
+                        <li><a href="photos.html">Gallery</a></li>
+                        <li><a href="contactus.html" id="last-item">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End navigation -->
+        
+        <!-- Banner -->
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Employment</h1>
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="index.html">Home</a> |
+                    </li>
+                    <li>
+                        Employment
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- End banner -->
+        
+        <!-- Application-->
+        <section>
+            <div class="container">
+                <div class="row">
+                   <div class="col-md-12">
+                       <h2>Employment Application</h2>
+                       <p>The professional groomers we select can be nothing less than exceptional in grooming expertise, quality, attitude, and overall demeanor with dogs. You must provide pictures of your quality work as well as demonstrate your grooming skills as part of the interview process. We also require references! To work as a spaw specialist, or bather, you must be a minimum of 17 years old to work at That Dirty Dog. If you are under 18, a work permit is required. Other requirements: must love dogs, must be great at multi-tasking, a fast mover, have a love of detail cleaning and organization, have held a previous customer service position.</p>
+                   </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form id="application-form" method="post" action="application.php" role="form">
+
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Contact Information</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">First Name *</label>
+                                        <input id="form_name" type="text" name="firstname" class="form-control" placeholder="Please enter your first name" required="required" data-error="Your first name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Last Name *</label>
+                                        <input id="form_lastname" type="text" name="lastname" class="form-control" placeholder="Please enter your last name" required="required" data-error="Your last name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Phone *</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone" required="required" data-error="Your phone number is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="A valid email address is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="address">Address</label>
+                                        <input id="address" type="text" name="address" class="form-control" placeholder="Please enter your street address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="city">City, State, Zip</label>
+                                        <input id="city" type="text" name="city" class="form-control" placeholder="Please enter your city, state, and zip code">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="referral">How did you hear about us?</label>
+                                        <select id="referral" name="referral" class="form-control">
+                                          <option value="">Select an option</option>
+                                          <option value="Driving By">Driving By</option>
+                                          <option value="Referral">Referral</option>
+                                          <option value="Internet Search">Internet Search</option>
+                                          <option value="Magazine">Magazine</option>
+                                          <option value="Newspaper">Newspaper</option>
+                                          <option value="Television">Television</option>
+                                          <option value="Radio">Radio</option>
+                                          <option value="Gift Certificate">Gift Certificate</option>
+                                          <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="position">For which position are you applying?</label>
+                                        <select id="position" name="position" class="form-control">
+                                          <option value="">Select an option</option>
+                                          <option value="Fur Stylist">Fur Stylist (Groomer)</option>
+                                          <option value="Spaw Specialist">Spaw Specialist (Washer and Walker)</option>
+                                          <option value="Manager or Assistant Manager">Manager or Assistant Manager</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="workdays">Which days can you work?</label> <a href="#" class="form-icon" aria-label="Hours of Operation" data-toggle="modal" data-target="#operatingHours"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                                        <input id="workdays" type="text" name="workdays" class="form-control" placeholder="Please enter the days you can work">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="workhours">What hours can you work?</label> <a href="#" class="form-icon" aria-label="Hours of Operation" data-toggle="modal" data-target="#operatingHours"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                                        <input id="workhours" type="text" name="workhours" class="form-control" placeholder="Please enter the hours you can work">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Background and Training</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="citizenship">Are you authorized to work in the US?</label><br>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="citizenship" id="citizenship1" value="Yes"> Yes
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="citizenship" id="citizenship2" value="No"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="highesteducation">Highest education level completed</label><br>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="highesteducation" id="highesteducation1" value="Some high school"> Some High School
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="highesteducation" id="highesteducation2" value="High School"> High School
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="highesteducation" id="highesteducation3" value="Some college"> Some College
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="highesteducation" id="highesteducation4" value="College"> College
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="highesteducation" id="highesteducation5" value="Trade school"> Trade School
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="yearscompleted">If still in High School, how many years have you completed?</label>
+                                        <input id="yearscompleted" type="text" name="yearscompleted" class="form-control" placeholder="Please enter the number of years completed">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="schoolname">Name of School (High School or College)</label>
+                                        <input id="schoolname" type="text" name="schoolname" class="form-control" placeholder="Please enter the name of your school">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="collegetraining">Briefly describe your college training:</label>
+                                        <textarea id="collegetraining" name="collegetraining" class="form-control" placeholder="Please describe your college training" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="skills">List any additional skills relevant to the job for which you are applying:</label>
+                                        <textarea id="skills" name="skills" class="form-control" placeholder="Please list your relevant skills" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="driverslicense">Do you have a valid driver's license?</label><br>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="driverslicense" id="driverslicense1" value="Yes"> Yes
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="driverslicense" id="driverslicense2" value="No"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="felony">Have you ever been convicted of a felony?</label><br>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="felony" id="felony1" value="Yes"> Yes
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="felony" id="felony2" value="No"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="felonydescription">If "yes," please explain:</label>
+                                        <textarea id="felonydescription" name="felonydescription" class="form-control" placeholder="If you have been convicted of a felony, please explain why" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Employment History</h3>
+                                    <p>List, in order, each employer for the past five years (most recent first).</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="employer1">Employer</label>
+                                        <input id="employer1" type="text" name="employer1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="position1">Position</label>
+                                        <input id="position1" type="text" name="position1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="employerphone1">Phone</label>
+                                        <input id="employerphone1" type="tel" name="employerphone1" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="employeraddress1">Address</label>
+                                        <input id="employeraddress1" type="text" name="employeraddress1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="employercity1">City, State, Zip</label>
+                                        <input id="employercity1" type="text" name="employercity1" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="startedworking1">Started Working</label>
+                                        <input id="startedworking1" type="text" name="startedworking1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="stoppedworking1">Stopped Working</label>
+                                        <input id="stoppedworking1" type="text" name="stoppedworking1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="startingpay1">Starting Pay</label>
+                                        <input id="startingpay1" type="text" name="startingpay1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="endingpay1">Ending Pay</label>
+                                        <input id="endingpay1" type="text" name="endingpay1" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="reason1">Reason for Leaving</label>
+                                        <input id="reason1" type="text" name="reason1" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="duties1">Job Duties</label>
+                                        <textarea id="duties1" name="duties1" class="form-control" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="employer2">Employer</label>
+                                        <input id="employer2" type="text" name="employer2" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="position2">Position</label>
+                                        <input id="position2" type="text" name="position2" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="employerphone2">Phone</label>
+                                        <input id="employerphone2" type="tel" name="employerphone2" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="employeraddress2">Address</label>
+                                        <input id="employeraddress2" type="text" name="employeraddress2" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="employercity2">City, State, Zip</label>
+                                        <input id="employercity2" type="text" name="employercity2" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="startedworking2">Started Working</label>
+                                        <input id="startedworking2" type="text" name="startedworking2" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="stoppedworking2">Stopped Working</label>
+                                        <input id="stoppedworking2" type="text" name="stoppedworking2" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="startingpay2">Starting Pay</label>
+                                        <input id="startingpay2" type="text" name="startingpay2" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="endingpay2">Ending Pay</label>
+                                        <input id="endingpay2" type="text" name="endingpay2" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="reason2">Reason for Leaving</label>
+                                        <input id="reason2" type="text" name="reason2" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="duties2">Job Duties</label>
+                                        <textarea id="duties2" name="duties2" class="form-control" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="employer3">Employer</label>
+                                        <input id="employer3" type="text" name="employer3" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="position3">Position</label>
+                                        <input id="position3" type="text" name="position3" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="employerphone3">Phone</label>
+                                        <input id="employerphone3" type="tel" name="employerphone3" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="employeraddress3">Address</label>
+                                        <input id="employeraddress3" type="text" name="employeraddress3" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="employercity3">City, State, Zip</label>
+                                        <input id="employercity3" type="text" name="employercity3" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="startedworking3">Started Working</label>
+                                        <input id="startedworking3" type="text" name="startedworking3" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="stoppedworking3">Stopped Working</label>
+                                        <input id="stoppedworking3" type="text" name="stoppedworking3" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="startingpay3">Starting Pay</label>
+                                        <input id="startingpay3" type="text" name="startingpay3" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="endingpay3">Ending Pay</label>
+                                        <input id="endingpay3" type="text" name="endingpay3" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="reason3">Reason for Leaving</label>
+                                        <input id="reason3" type="text" name="reason3" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="duties3">Job Duties</label>
+                                        <textarea id="duties3" name="duties3" class="form-control" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="otheremployers">List any additional employers you have had (provide name, dates, duties, contact info):</label>
+                                        <textarea id="otheremployers" name="otheremployers" class="form-control" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="contactemployers">May we contact your present or former employers?</label><br>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="contactemployers" id="contactemployers1" value="Yes"> Yes
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio" name="contactemployers" id="contactemployers2" value="No"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="whichemployers">If not, which one(s):</label>
+                                        <input id="whichemployers" type="text" name="whichemployers" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Legal</h3>
+                                    <p>I, the undersigned understand and agree that (please check each line):</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="checkbox-inline m30">
+                                      <input type="checkbox" name="legal1" id="legal1" value="Yes"> I acknowledge that under company procedure a routine inquiry may be made to provide information on my character, general reputation, personal characteristics, and mode of living. More information about the nature and scope of such an inquiry, if one is made, will be provided upon written request.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="checkbox-inline m30">
+                                      <input type="checkbox" name="legal2" id="legal2" value="Yes"> I understand that employers for whom I have worked in the past may be requested to furnish THAT DIRTY DOG, INC. information concerning my past employment or activities and I hereby release such employers from my liability in connection therewith.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="checkbox-inline m30">
+                                      <input type="checkbox" name="legal3" id="legal3" value="Yes"> I understand that any false statement, omission or misrepresentation made in connection with my past record or any other part of my application for employment with THAT DIRTY DOG, INC. will be justification, should I be employed, for my dismissal regardless of when such fact may be discovered.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="m30"><strong>Indemnification.</strong> By signing this application (in the form of typing your name in the box below), Applicant hereby indemnifies and agrees to hold THAT DIRTY DOG, INC. harmless for any costs, lost profits, damages and/or expenses (including without limitation, attorneys fees) incurred by THAT DIRTY DOG, INC. at any time as a result of actions, disputes or controversies in which THAT DIRTY DOG, INC. becomes a party, which arise out of any non-compete, trade secret, and/or confidentiality agreements and/or duties, whether express or implied by employment law or otherwise, that Applicant has in relation to third parties, including current or previous employers. Applicant acknowledges and agrees that by considering Applicant’s application, or, if it occurs, by hiring Applicant that THAT DIRTY DOG, INC. has provided sufficient consideration to Applicant to support the grant of this indemnification.</p>
+                                    <p>Neither the acceptance of this application nor the subsequent entry into any type of employment relationship, either in the position applied for or any other position, and regardless of the contents of employee handbooks, personnel manuals, benefit plans, policy statements, and the like as they may exist from time to time, or other Company practices, shall serve to create an actual or implied contract of employment, or to confer any right to remain an employee of THAT DIRTY DOG, INC., or otherwise to change in any respect the employment-at-will relationship between it and the undersigned, and that relationship cannot be altered except by a written instrument signed by the President of the Company. Both the undersigned and THAT DIRTY DOG, INC. may end the employment relationship at any time, without specified notice or reason. If employed, I understand that the Company may unilaterally change or revise their benefits, policies and procedures and such changes may include reduction in benefits.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Signature</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="signature">To sign, type full name:</label>
+                                        <input id="signature" type="text" name="signature" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="date">Date</label>
+                                        <input id="date" type="date" name="date" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p><strong>Thanks so much for applying to join our team! While we cannot correspond with all applicants, we will review all applications submitted. Should we decide to move to the next step, you will receive an email or phone call based on the information you supplied. Thanks again, and have a terrific day!</strong></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-primary btn-prl btn-send" value="Submit Application - Please Only Click Once">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messages"></div>
+
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End application -->
+        
+        <!-- Footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <h3>Contact</h3>
+                        <ul class="footer-contact">
+                           <li>
+                                <div class="footer-icon" aria-hidden="true">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <a href="https://www.google.com/maps/place/11255+Woodstock+Rd+%23100,+Roswell,+GA+30075/@34.0580942,-84.3850274,17z/data=!3m1!4b1!4m5!3m4!1s0x88f57311d3a82021:0x7b4404910b68d1d1!8m2!3d34.0580942!4d-84.3828387?q=11255+Woodstock+Road+%23100+Roswell,+GA+30075&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiGmdikwvzUAhUCPj4KHSiuCacQ_AUICigB" target="_blank">11255 Woodstock Road #100<br>Roswell, GA 30075</a>
+                            </li>
+                            <li>
+                                <div class="footer-icon">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                </div>
+                                <a href="tel:+17709937877">770-993-7877</a>
+                            </li>
+                            <li>
+                                <div class="footer-icon">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                </div>
+                                <a href="mailto:info@thatdirtydog.com">info@thatdirtydog.com</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-social">
+                            <li>
+                                <a href="https://www.facebook.com/thatdirtydog/" class="footer-icon" aria-label="Facebook" target="_blank" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/thatdirtydog" class="footer-icon" aria-label="Twitter" target="_blank" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/thatdirtydog/" class="footer-icon" aria-label="Instagram" target="_blank" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.yelp.com/biz/that-dirty-dog-roswell-2" class="footer-icon" aria-label="Yelp" target="_blank" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Yelp"><i class="fa fa-yelp" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                        <div class="footer-logo pull-left">
+                            <img src="images/curly.png" alt="Curly">
+                            <img src="images/inky.png" alt="Inky">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <h3>Hours of Operation</h3>
+                        <ul class="footer-hours">
+                            <li>Mon<span>10:00 AM - 3:00 PM</span></li>
+                            <li>Tues-Fri<span>10:00 AM - 6:00 PM</span></li>
+                            <li>Sat<span>9:00 AM - 6:00 PM</span></li>
+                            <li>Sun<span>11:00 AM - 5:00 PM</span></li>
+                            <li>Grooming appointments start daily at  8:00 AM</li>
+                        </ul>
+                        <a href="rewards.html"><button type="button" class="btn btn-primary btn-prl">Join our FiveStars<sup>TM</sup> Rewards Program!</button></a>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-1 col-md-12 col-sm-12">
+                        <h3>Follow Us On Instagram</h3>
+                        <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/26e70fb069055c4bac7dc547d54060f0.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                    </div>
+                    <div class="kudzu">
+                        <a href="http://www.kudzu.com/m/That-Dirty-DogInc.-738039"><img src="http://images.kudzu.com/img/icon_rate_and_review_100x80.gif" height="80px" width="100px" border="0"></a>
+                    </div>
+                    <div class="mobile-footer-logo text-center">
+                        <img src="images/curly.png" alt="Curly">
+                        <img src="images/inky.png" alt="Inky">
+                    </div>
+                    <a href="#" id="back-to-top" aria-label="Back to top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+        
+        <!-- Copyright -->
+        <div id="copyright">
+            <div class="container-fluid">
+                <p>Copyright © <span id="current-year">2017</span> That Dirty Dog Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+        <!-- End copyright -->
+
+        <!-- jQuery -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- AOS JS -->
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <!-- Validation JS -->
+        <script src="js/validator.min.js"></script>
+        <!-- Lettering JS -->
+        <script src="js/jquery.lettering.js"></script>
+        <!-- Textillate JS -->
+        <script src="js/jquery.textillate.js"></script>
+        <!-- Custom JS -->
+        <script src="js/scripts.js"></script>
+        <!-- Form JS -->
+        <script src="application.js"></script>
+    </body>
+</html>

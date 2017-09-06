@@ -61,3 +61,16 @@ h3 {
 .tooltip.right .tooltip-arrow {
     border-right-color: $tooltip-bg-color;
 }
+.form-icon {
+    color: #000;
+    &:hover {
+        color: $primary-accent-color;
+    }
+}
+.modal-list {
+    list-style: none;
+    padding-left: 0;
+}
+.m30 {
+    margin-top: 30px;
+}
