@@ -48,7 +48,7 @@ try
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email
         if (isset($fields[$key])) {
-            $emailTextHtml .= "<tr><th>$fields[$key]</th><td>$value</td></tr>";
+            $emailTextHtml .= "<tr><td><strong>$fields[$key]</strong></td><td>$value</td></tr>";
         }
     }
     $emailTextHtml .= "</table><hr>";
